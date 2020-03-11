@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nguyen_to</title>
+</head>
+<body>
+<h3>Kiểm tra số nguyên tố</h3>
+<p>Nhập số</p>
+<input type="text" name="" id="number">
+<p id="result"></p>
+<button onclick="show()">Kiểm tra</button>
+
+
+<script>
+    function checkPrime(n) {
+        for (let i = 2; i <= Math.sqrt(n); i++) {
+            if (n % i === 0)
+                return false;
+        }
+        return true;
+    }
+
+    function show() {
+        let a = +document.getElementById('number').value;
+        let sum = 0;
+        let n = 2;
+        document.getElementById('result').innerHTML = '';
+        while (sum < a) {
+            if (checkPrime(n)) {
+                document.getElementById('result').innerHTML += "Số nguyên tố :" + n + "<br>";
+                sum++;
+            }
+            n++;
+        }
+    }
+</script>
+</body>
+</html>
