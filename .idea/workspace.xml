@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b22f75d0-a6a9-42f6-b5db-4618af531e1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/so-nguyen-to.html" beforeDir="false" afterPath="$PROJECT_DIR$/so-nguyen-to.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Bài tập giờ lý thuyết" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -45,7 +46,8 @@
       <updated>1583827040750</updated>
       <workItem from="1583827043837" duration="6534000" />
       <workItem from="1583917886328" duration="2701000" />
-      <workItem from="1583942691539" duration="2496000" />
+      <workItem from="1583942691539" duration="3357000" />
+      <workItem from="1583974712080" duration="759000" />
     </task>
     <servers />
   </component>
@@ -53,9 +55,9 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1583940797922">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1583977015351">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583940797922" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1583977015351" />
   </component>
 </project>

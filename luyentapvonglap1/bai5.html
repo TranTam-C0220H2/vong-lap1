@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Tính tổng của 20 số đầu tiên trong dãy fibonacci.
+        let fibonacci = Array();
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
+        let S = fibonacci[0] + fibonacci[1];
+        for (let i = 2; i < 20; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+            S += fibonacci[i];
+        }
+        alert('Tổng 20 số đầu tiên trong dãy fibonacci là ' + S);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Tìm số đầu tiên trong dãy fibonacci chia hết cho 5.
+        let fibonacci = Array();
+        fibonacci[0] = 0;
+        fibonacci[1] = 1;
+        for (let i = 2; i <= Infinity; i++) {
+            fibonacci[i] = fibonacci[i - 1] + fibonacci[i - 2];
+            if (fibonacci[i] % 5 === 0) {
+                alert(fibonacci[i] + ' là số đầu tiên trong dãy fibonacci chia hết cho 5');
+                break;
+            }
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
