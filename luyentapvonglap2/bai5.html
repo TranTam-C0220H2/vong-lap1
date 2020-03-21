@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết chương trình tính lãi ngân hàng (lãi mẹ đẻ lại con) khi biết số tiền ban đầu, số tháng cho vay và lãi xuất hàng tháng.
+        function Compounding(loan, month, interestRate) {
+            this.loan = loan;
+            this.month = month;
+            this.interestRate = interestRate;
+            this.getLoan = function () {
+                return this.loan;
+            };
+            this.Interest = function () {
+                let interest = this.loan;
+                for (let i = 0; i < this.month; i++) {
+                    interest = interest + interest * (this.interestRate / 100);
+                }
+                return interest;
+            };
+        }
+
+        function main() {
+            let yourLoan = +document.getElementById('isLoan').value;
+            let yourMonth = +document.getElementById('isMonth').value;
+            let yourInterestRate = +document.getElementById('isInterestRate').value;
+            let compounding = new Compounding(yourLoan, yourMonth, yourInterestRate);
+            alert('Lãi chênh lệch: ' + (compounding.Interest() - compounding.getLoan()));
+            console.log(compounding.getLoan());
+        }
+    </script>
+</head>
+<body>
+<label>Số tiền vay ban đầu: <input type="number" id="isLoan"></label><br>
+<label>Số tháng vay: <input type="number" id="isMonth"></label><br>
+<label>Lãi suất: <input type="number" id="isInterestRate"> %</label><br>
+<button onclick="main()">Tính lãi</button>
+</body>
+</html>

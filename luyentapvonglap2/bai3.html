@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //In tam giác vuông. Các góc vuông nằm ở các vị trí khác nhau
+        let i;
+        let j;
+        let t;
+        for (i = 1; i < 6; i++) {
+            for (j = 0; j < i; j++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        document.write('<hr>');
+        for (i = 5; i > 0; i--) {
+            for (j = i; j > 0; j--) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        document.write('<hr>');
+        for (i = 1; i < 6; i++) {
+            for (t = 4; t > i - 1; t--) {
+                document.write('&nbsp;&nbsp;');
+            }
+            for (j = 0; j < i; j++) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+        document.write('<hr>');
+        for (i = 5; i > 0; i--) {
+            for (t = 5 - i; t > 0; t--) {
+                document.write('&nbsp;&nbsp;');
+            }
+            for (j = i; j > 0; j--) {
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>

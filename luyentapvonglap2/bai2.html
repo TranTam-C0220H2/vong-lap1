@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Tính giai thừa của một số nguyên dương
+        let a = +prompt('Nhập số nguyên dương a:');
+        let S = a;
+        if (Number.isInteger(a) && a > 0) {
+            for (let i = a - 1; i > 1; i--) {
+                S *= i;
+            }
+            alert('a! = ' + S);
+        } else {
+            alert('Đây không phải số nguyên dương');
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
